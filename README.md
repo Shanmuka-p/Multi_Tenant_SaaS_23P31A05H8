@@ -96,8 +96,8 @@ The system follows a **Three-Tier Architecture**:
 
 **1. Clone the Repository**
 ```bash
-git clone []()
-cd 
+git clone https://github.com/Shanmuka-p/Multi_Tenant_SaaS_23P31A05H8.git
+cd Multi_Tenant_SaaS_23P31A05H8
 
 ```
 

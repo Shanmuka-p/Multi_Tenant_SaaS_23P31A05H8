@@ -14,7 +14,6 @@ try {
 } catch (e) {
   localStorage.clear();
 }
-// ---------------------------
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -19,11 +19,11 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await api.post('/auth/login', formData);
-      
+
       // Save token and user info
       localStorage.setItem('token', response.data.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.data));
-      
+
       toast.success('Login successful!');
       navigate('/dashboard');
     } catch (error) {
@@ -37,20 +37,19 @@ export default function Login() {
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded shadow-md">
         <div className="text-center">
           <h2 className="text-2xl font-bold">Welcome Back</h2>
-          <p className="text-gray-500">Sign in to your account</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          
+
           {/* Workspace Field - Critical for Multi-Tenancy */}
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Workspace (Subdomain)
+              Workspace
             </label>
             <input
               type="text"
               name="tenantSubdomain"
-              placeholder="e.g. demo (Leave empty for Super Admin)"
+              placeholder="Enter Subdomain"
               className="w-full px-3 py-2 mt-1 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               value={formData.tenantSubdomain}
               onChange={handleChange}

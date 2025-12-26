@@ -9,7 +9,7 @@ export default function Users() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ fullName: '', email: '', password: '', role: 'user' });
 
-  // --- SAFE USER PARSING (Fixes White Screen Crash) ---
+
   let currentUser = { role: 'user' };
   try {
     const storedUser = localStorage.getItem('user');
@@ -20,7 +20,6 @@ export default function Users() {
     console.warn("Corrupted user data in Users page");
   }
   const isAdmin = currentUser.role === 'tenant_admin';
-  // ----------------------------------------------------
 
   const fetchUsers = async () => {
     try {
