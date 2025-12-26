@@ -43,7 +43,7 @@ export default function RegisterTenant() {
               required 
               onChange={handleChange} 
               className="w-full px-3 py-2 border rounded focus:ring-blue-500 focus:border-blue-500" 
-              placeholder="e.g. Acme Inc" 
+              placeholder="Enter Company Name" 
             />
           </div>
           <div>
@@ -52,13 +52,10 @@ export default function RegisterTenant() {
               name="subdomain" 
               required 
               onChange={handleChange} 
-              className="w-full px-3 py-2 border rounded focus:ring-blue-500 focus:border-blue-500" 
-              placeholder="e.g. acme" 
+              className="w-full px-3 py-2 border rounded focus:ring-blue-500 focus:border-blue-500"  
             />
-            <p className="text-xs text-gray-500 mt-1">Your URL will be: acme.saas-platform.com (or similar)</p>
           </div>
 
-          <hr className="my-4" />
 
           {/* Admin Details */}
           <div>

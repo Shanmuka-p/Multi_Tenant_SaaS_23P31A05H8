@@ -44,12 +44,11 @@ export default function Register() {
               type="text"
               name="tenantSubdomain"
               required
-              placeholder="e.g. demo"
               className="w-full px-3 py-2 mt-1 border rounded-md focus:ring-blue-500 focus:border-blue-500"
               value={formData.tenantSubdomain}
               onChange={handleChange}
             />
-            <p className="text-xs text-gray-500 mt-1">Ask your admin for the workspace subdomain.</p>
+            <p className="text-xs text-gray-500 mt-1">Ask your admin for the workspace subdomain</p>
           </div>
 
           {/* Name Field */}
