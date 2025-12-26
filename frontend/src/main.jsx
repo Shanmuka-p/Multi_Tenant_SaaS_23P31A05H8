@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
-// --- SAFETY RESET SCRIPT ---
-// This runs before React starts to clear corrupted data
+
 try {
   const user = localStorage.getItem('user');
   if (user === "undefined" || user === undefined) {
