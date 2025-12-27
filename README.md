@@ -11,7 +11,7 @@ This application is a full-stack SaaS platform designed for organizations to man
 ---
 
 ## 📺 Video Demo
-**[🎥 Click here to watch the Project Walkthrough & Architecture Demo]()**
+**[🎥 Click here to watch the Project Walkthrough & Architecture Demo](https://youtu.be/o932PNg3kFI)**
 
 ---
 
@@ -111,9 +111,9 @@ docker-compose up -d --build
 
 **3. Verify Installation**
 
-* **Backend:** Visit [http://localhost:5000/api/health](https://www.google.com/search?q=http://localhost:5000/api/health)
+* **Backend:** Visit [http://localhost:5000/api/health]
 * *Expected Response:* `{"status":"ok","database":"connected"}`
-* **Frontend:** Visit [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000)
+* **Frontend:** Visit [http://localhost:3000]
 
 **4. Stop the Application**
 
